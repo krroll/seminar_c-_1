@@ -6,26 +6,52 @@
 // a = 2 b = 10 -> max = 10
 // a = -9 b = -3 -> max = -3
 
-Console.WriteLine ("Введите число а ");
-int numberA = Convert.ToInt32 (Console.ReadLine ());
-Console.WriteLine ("Введите число b ");
-int numberB = Convert.ToInt32 (Console.ReadLine ());
-int max;
-if (numberA>numberB)
+// Console.WriteLine ("Введите число а ");
+// int numberA = Convert.ToInt32 (Console.ReadLine ());
+// Console.WriteLine ("Введите число b ");
+// int numberB = Convert.ToInt32 (Console.ReadLine ());
+// int max;
+// if (numberA>numberB)
+// {
+//     Console.WriteLine ("a>b");
+//     Console.WriteLine ("max = ");
+//     max = numberA;
+//     Console.WriteLine (max);
+// }
+// else if (numberA == numberB)
+// {
+//     Console.WriteLine ("Числа равны");
+// }
+// else
+// {
+//     max = numberB;
+//     Console.WriteLine ("a<b");
+//     Console.WriteLine ("max = ");
+//     Console.WriteLine (max);
+// }
+//----------------------------------------------
+// Задача 4: Напишите программу, которая 
+// принимает на вход три числа и выдаёт 
+// максимальное из этих чисел.
+
+// 2, 3, 7 -> 7
+// 44 5 78 -> 78
+// 22 3 9 -> 22
+
+Console.WriteLine ("Введите первое число ");
+int number1 = Convert.ToInt32 (Console.ReadLine ());
+Console.WriteLine ("Введите воторое число ");
+int number2 = Convert.ToInt32 (Console.ReadLine ());
+Console.WriteLine ("Введите третье число ");
+int number3 = Convert.ToInt32 (Console.ReadLine ());
+int max = number1;
+if (number2>max)
 {
-    Console.WriteLine ("a>b");
-    Console.WriteLine ("max = ");
-    max = numberA;
-    Console.WriteLine (max);
+    max = number2;
 }
-else if (numberA == numberB)
+if (number3>max)
 {
-    Console.WriteLine ("Числа равны");
+    max = number3;
 }
-else
-{
-    max = numberB;
-    Console.WriteLine ("a<b");
-    Console.WriteLine ("max = ");
-    Console.WriteLine (max);
-}
+Console.Write ("max = ");
+Console.WriteLine (max);
