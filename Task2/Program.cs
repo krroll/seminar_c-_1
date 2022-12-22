@@ -66,14 +66,40 @@
 // -3 -> нет
 // 7 -> нет
 
-Console.WriteLine ("Введите число ");
-int number = Convert.ToInt32 (Console.ReadLine ());
+// Console.WriteLine ("Введите число ");
+// int number = Convert.ToInt32 (Console.ReadLine ());
 
-if (number % 2 == 0)
+// if (number % 2 == 0)
+// {
+//     Console.WriteLine ("Число чётное");
+// }
+// else
+// {
+//     Console.WriteLine ("Число  НЕ чётное");
+// }
+// -----------------------------------
+
+// Задача 8: Напишите программу, которая 
+// на вход принимает число (N), 
+// а на выходе показывает все чётные числа от 1 до N.
+
+// 5 -> 2, 4
+// 8 -> 2, 4, 6, 8
+
+Console.WriteLine ("Введите число N");
+int number = Convert.ToInt32 (Console.ReadLine ());
+Console.WriteLine ();
+int first = 1;
+if (number == 0)
 {
-    Console.WriteLine ("Число чётное");
+Console.WriteLine ("От 0 до 0 нет чётных чисел");
 }
 else
 {
-    Console.WriteLine ("Число  НЕ чётное");
+    while (first <= number)
+    {
+        if (first % 2 == 0)
+        Console.WriteLine (first);
+        first++;
+    }
 }
